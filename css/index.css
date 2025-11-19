@@ -14,7 +14,7 @@ header {
 	font-weight: 400;
 	font-style: normal;
 	text-decoration: underline;
-	font-size: 50px;
+	font-size: 5.5em;
 	width: max-content;
 	text-align: center;
 	margin: 0 auto;
@@ -23,7 +23,7 @@ header {
 .container {
 	margin: 0 auto;
 	max-width: 1200px;
-	background-color: rgb(9,9,9);
+	background-color: rgb(16,16,16);
 }
 
 
@@ -32,11 +32,56 @@ h1 {
 	font-family: "dico-typewriter", mono;
 	font-weight: 400;
 	font-style: normal;
+	font-size: 3em;
+	text-decoration: underline;
+	margin-left: 3%;
+}
+
+h2 {
+	font-family: "dico-typewriter", mono;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5em;
 	text-decoration: underline;
 }
 
 ul {
 	list-style-type: none;
+}
+
+#desc ul {
+	margin: 0;
+	padding: 0;
+}
+
+mark {
+	background-color: white;
+	color: white;
+}
+
+div#wrapper {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 0 3%;
+}
+
+
+#image img {
+	border: 4px solid white;
+	max-width: 400px;
+	height: auto;
+	
+}
+
+div#image {
+	text-align: center;
+}
+
+
+#return {
+	font-size: 2em;
+	text-decoration: underline;
+	margin-top: 60px;
 }
 
 #portraits {
@@ -53,7 +98,7 @@ ul {
   	display: flex;             
   	flex-direction: column;    
   	align-items: center;        
-  	text-align: center;
+	text-align: center;
 }
 
 #portraits p {
@@ -62,10 +107,18 @@ ul {
 	color: white;
 }
 
+#portraits img {
+	border: 4px solid white;
+	transition: width 1s, height 1s;
+	transition: transform 1s cubic-bezier(.32,.95,.48,.99);
+	max-width: 250px;
+	height: auto;
+}
+
 #world {
 	border: 4px solid white;
 	color: white;
-	font-size: 2em;
+	font-size: 2.5em;
 	font-family: "dico-typewriter", mono;
 	font-weight: 400;
 	font-style: normal;
@@ -83,12 +136,8 @@ ul {
 	transform: scale(1.08);
 }
 
-img {
-	border: 4px solid white;
-	transition: width 1s, height 1s;
-	transition: transform 1s cubic-bezier(.32,.95,.48,.99);
-	max-width: 250px;
-	height: auto;
+#portraits img:hover {
+	transform: scale(1.08);
 }
 
 a {
@@ -105,10 +154,6 @@ a:hover {
 	text-decoration: underline; 
 }
 
-a:hover img {
-	transform: scale(1.08);
-}
-
 a:active {
 	color: white;
 }
@@ -121,7 +166,7 @@ footer {
 	font-style: normal;
 	padding: 1px;
 	background-color: rgb(25,25,25);
-	margin-top: 20%;
+	margin-top: 5%;
 	flex-shrink: 0;
 }
 
