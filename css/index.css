@@ -54,7 +54,15 @@ ul {
 	padding: 0;
 }
 
-mark {
+#desc {
+	text-align: left;
+}
+
+#story {
+	text-align: left;
+}
+
+span {
 	background-color: white;
 	color: white;
 }
@@ -80,7 +88,6 @@ div#image {
 
 #return {
 	font-size: 2em;
-	text-decoration: underline;
 	margin-top: 60px;
 }
 
@@ -142,7 +149,8 @@ div#image {
 
 a {
 	color: white;     
-	text-decoration: none; 
+	text-decoration: none;
+	font-style: italic 
 }
 
 a:visited {
@@ -151,7 +159,8 @@ a:visited {
 
 a:hover {
 	color: white; 
-	text-decoration: underline; 
+	text-decoration: underline;
+	 
 }
 
 a:active {
@@ -169,4 +178,3 @@ footer {
 	margin-top: 5%;
 	flex-shrink: 0;
 }
-
